@@ -1,0 +1,44 @@
+*{
+  margin: 0;
+}
+body {
+  font-family: 'Rubik', sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgb(238,174,202);
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+}
+h1{
+  font-weight: bold;
+}
+.container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container-cards{
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  padding: 1em;
+  width: 40vw;
+}
+.contact-card{
+  padding: 1em;
+  display: inline-flex;
+  align-items: center;
+}
+.ima-circle{
+  border: 2px solid #acddef;
+  border-radius: 56%;
+  padding: 0.5rem;
+  background-color: beige;
+}
+.text{
+  padding-left: 1.3em;
+}
+.name{
+  font-size: 1.3em;
+  font-weight: bold;
+}
