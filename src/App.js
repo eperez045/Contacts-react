@@ -71,10 +71,9 @@ const App = () => {
 
   return (
     <div className="container">
+
       <div className="container-cards">
         <h1>Contact List:</h1>
-
-        <UserTable users={users} editRow={editRow} deleteUser={deleteUser} />
 
         <div className="flex-large">
           <div>
@@ -89,6 +88,10 @@ const App = () => {
             />
           </div>
         </div>
+
+        <UserTable users={users} editRow={editRow} deleteUser={deleteUser} />
+
+        
       </div>
     </div>
   );

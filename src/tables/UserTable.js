@@ -1,4 +1,5 @@
 import React from "react";
+import { AiOutlineEdit, AiOutlineDelete} from "react-icons/ai"
 
 const UserTable = (props) => (
   <>
@@ -13,22 +14,22 @@ const UserTable = (props) => (
             <p className="direction">{user.direction}</p>
           </div>
 
-          <td>
+          <div className="section-button">
             <button
-              className="button muted-button"
+              className="icon-button"
               onClick={() => {
                 props.editRow(user);
               }}
             >
-              Edit
+              <AiOutlineEdit className="edit-button"/>
             </button>
             <button
-              className="button muted-button"
+              className="icon-button"
               onClick={() => props.deleteUser(user.id)}
             >
-              Delete
+              <AiOutlineDelete className="delete-button"/>
             </button>
-          </td>
+          </div>
         </div>
       ))
     ) : (
