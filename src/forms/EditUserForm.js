@@ -21,6 +21,7 @@ const EditUserForm = (props) => {
     props.setEditing(false);
     setUser(initialFormState);
     props.setCurrentUser(initialFormState);
+    
   };
 
   return (

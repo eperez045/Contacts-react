@@ -8,6 +8,7 @@ import avatar2 from "../src/images/avatar2.png";
 import avatar3 from "../src/images/avatar3.png";
 import avatar4 from "../src/images/avatar4.png";
 import avatar5 from "../src/images/avatar5.png";
+import avatar6 from "../src/images/avatar6.png";
 
 const App = () => {
   const usersData = [
@@ -50,6 +51,7 @@ const App = () => {
 
   const addUser = (user) => {
     user.id = users.length + 1;
+    user.img = avatar6;
     setUsers([...users, user]);
   };
 
