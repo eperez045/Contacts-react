@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { MdAddCircleOutline, MdCheckCircleOutline, MdHighlightOff} from "react-icons/md"
 
 const EditUserForm = (props) => {
   const initialFormState = { id: null, name: "", direction: "" };
@@ -32,26 +33,36 @@ const EditUserForm = (props) => {
         resetAddUser();
       }}
     >
-      <label>Name</label>
-      <input
+      <div className="form">
+        <label>Name</label>
+        <input
+        className="input"
         type="text"
         name="name"
         value={user.name}
         onChange={handleInputChange}
-      />
+        />
+      </div>
+      
+      <div className="form">
       <label>Direction</label>
       <input
+        className="input"
         type="text"
         name="direction"
         value={user.direction}
         onChange={handleInputChange}
       />
-      <button>{props.editing ? "Update user" : "Add user"}</button>
+      </div>
+      <div className="button-form">
+      <button className="icon-button">{props.editing ? <MdCheckCircleOutline className="edit-button"/> : <MdAddCircleOutline className="edit-button"/>}</button>
       {props.editing && (
-        <button onClick={resetAddUser} className="button muted-button">
-          Cancel
+        <button onClick={resetAddUser} className="icon-button">
+          <MdHighlightOff className="delete-button"/>
         </button>
       )}
+      </div>
+      
     </form>
   );
 };

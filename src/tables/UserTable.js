@@ -6,8 +6,8 @@ const UserTable = (props) => (
     {props.users.length > 0 ? (
       props.users.map((user) => (
         <div key={user.id} className="contact-card">
-          <div className="ima-circle">
-            <img src={user.img} alt="" />
+          <div className="section-image">
+            <img src={user.img} alt="" className="image"/>
           </div>
           <div className="text">
             <p className="name">{user.name}</p>

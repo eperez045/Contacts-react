@@ -25,6 +25,24 @@ h1{
   margin: 2em;
   width: 80%;
 }
+.edit-section{
+  padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border:#acddef solid 2px;
+  border-radius: 10px;
+  margin: 1.5em;
+}
+.form{
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+}
+.input{
+  display: block;
+  padding: 0.2rem;
+}
 .contact-card{
   padding: 1em;
   display: grid;
@@ -33,15 +51,17 @@ grid-template-rows: 1fr;
 grid-column-gap: 0px;
 grid-row-gap: 0px;
 }
-.ima-circle{
-  border: 2px solid #acddef;
-  border-radius: 56%;
-  padding: 0.75rem;
-  background-color: beige;
+.section-image{
   display: flex;
   align-items: center;
   justify-content: center;
   grid-area: 1 / 1 / 2 / 2;
+}
+.image{
+  border: 2px solid #acddef;
+  border-radius: 56%;
+  padding: 0.75rem;
+  background-color: #f8eac7;
 }
 .text{
   padding-left: 1.3em;
@@ -56,6 +76,9 @@ grid-row-gap: 0px;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.button-form{
+  padding: 0.5rem;
 }
 .icon-button{
   background-color: transparent;

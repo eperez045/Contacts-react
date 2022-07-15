@@ -75,7 +75,7 @@ const App = () => {
       <div className="container-cards">
         <h1>Contact List:</h1>
 
-        <div className="flex-large">
+        <div className="edit-section">
           <div>
             <h2>{editing ? "Edit user" : "Add user"}</h2>
             <EditUserForm
